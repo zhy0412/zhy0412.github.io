@@ -1,0 +1,136 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #454545;
+}
+.Container{
+	width:100%;
+	height:855px;
+}
+.wrap{
+	height:855px;
+	margin: 0 auto;
+	background-image: url(../img/bg.png);
+}
+.img{
+	width:100%;
+	height:177px;
+	background-color:#0E1621;
+}
+.img>a{
+	display: block;
+	width:1000px;
+	height:177px;
+	margin: 0 auto;
+	margin-top:1px;
+}
+.crumbs_nav{
+	width: 100%;
+	height:34px;
+	background-image: url(../img/3_6.png);
+	border-bottom: 1px solid #DEE0DE;
+}
+.crumbs_nav1{
+	width:1000px;
+	height:34px;
+	/*border:1px solid red;*/
+	margin:0 auto;
+}
+.crumbs_nav1>ul>li{
+	float:left;
+	font-size:12px;
+	margin-left:10px;
+	margin-top:9px;
+}
+.crumbs_nav1>ul>.color>a{
+	color:#808080;
+}
+.main{
+	width:100%;
+	height:882px;
+	background-image: url(../img/3_5中部背景.png);
+}
+.content{
+	width:1000px;
+	height:839px;
+	margin:0 auto;
+	padding-top:16px;
+}
+.side_title{
+	width:1000px;
+	height:43px;
+	/*border:1px solid red;*/
+	background-image: url(../img/nav.png);
+}
+.side_title>.guanyu{
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	background: url(../img/3_7.png) no-repeat left center;
+	padding-left:10px;
+}
+.side_title>li{
+	float:left;
+	margin-top:10px;
+	margin-left:18px;
+}
+.main_right{
+	width:1000px;
+	height:839px;
+	/*border:1px solid red;*/
+	float:right;
+	background-color:#ffffff;
+}
+.main_right>.side_title{
+	width:1000px;
+	height:43px;
+}
+.main_right>.side_title>.guanyu{
+	padding-left:16px;
+	font-family:arial;
+	background: url(../img/3_3.png) no-repeat left center;
+}
+.main_right>a{
+	display: block;
+	font-size: 25px;
+	font-family: "微软雅黑";
+	margin-left: 53px;
+	margin-top:54px
+}
+.main_right>.title{
+	display: block;
+	height:43px;
+	width:906px;
+	margin:0 auto;
+	margin-top:33px;
+	text-align: center;
+	font-size: 22px;
+	font-family: "微软雅黑";
+	border-bottom: 1px solid #DCDCDC;
+}
+.main_right>p{
+	font-size: 12px;
+	font-family: arial;
+	text-align: center;
+	color:#A1A1A1;
+	margin-top:5px;
+}
+.main_right>.text{
+	height:532px;
+	width:900px;
+	/*border:1px solid red;*/
+	margin:0 auto;
+}
+.main_right>.text>p{
+	font-size: 12px;
+	font-family: arial;
+	margin-top:28px;
+	line-height: 22px;
+	text-indent: 2em;
+}

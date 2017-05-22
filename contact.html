@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<style type="text/css">
+		    /*html,body{margin:0;padding:0;}*/
+		    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+		    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+		</style>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	</head>
+	<body>
+		<div class="Container">
+			<div class="wrap">
+				<div class="lang">
+					<ul>
+						<li><img src="img/2_2.png"></li>
+						<li><a href="">中文</a></li>
+						<li><img src="img/2_3.png"></li>
+						<li><a href="">English</a></li>
+					</ul>
+				</div>
+				<div class="logo">
+					<div class="logo1">
+						<a href="index.html"><img src="img/2_5.png"></a>
+						<a class="number" href=""><img src="img/number_03.png"></a>
+						
+					</div>
+					<div class="nav">
+						<div class="nav2">
+							<ul class="nav1">
+								<li><a href="index.html">网站首页</a></li>
+								<li><a href="aboutus.html">关于我们</a></li>
+								<li><a href="product.html">产品中心</a></li>
+								<li><a href="service.html">服务支持</a></li>
+								<li><a href="news.html">新闻资讯</a></li>
+								<li class="lianxi"><a href="contact.html">联系方式</a></li>
+							</ul>
+							<div class="search">
+								<a href=""><img src="img/2_4.png"></a>
+								<input type="text" placeholder="产品搜索">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="img">
+					<a href=""><img src="img/5_4.png"></a>
+				</div>
+				<div class="crumbs_nav">
+					<div class="crumbs_nav1">
+						<ul>
+							<li><img src="img/3_1.png"></li>
+							<li><a href="">您的当前位置</a></li>
+							<li><a href="">></a></li>
+							<li class="color"><a href="">首页</a></li>
+							<li><a href="">></a></li>
+							<li><a href="">联系方式</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--主体内容-->
+				<div class="main">
+					<div class="content">
+						<div class="main_right">
+							<ul class="side_title">
+								<li class="guanyu"><a href="">联系方式</a></li>
+							</ul>
+							<!--内容-->
+							<div class="matter">
+								<div class="matter_left">
+									<span>联系我们</span>
+									<a href="javascript:">
+										  <div style="width:468px;height:295px;border:#ccc solid 1px;" id="dituContent"></div>
+									</a>
+									<ul>
+										<li>研发中心：深圳市宝安区龙华街道建辉路121号信伟商务大厦 801 802 室</li>
+										<li>罗湖办公室：深圳市罗湖区宝岗路269号美芝华大厦 703 室</li>
+										<li>总机：+86 755 33234505</li>
+										<li>传真：+86 755 33581697</li>
+										<li>email：alex.luo@rodinbell.com</li>
+									</ul>
+								</div>
+								<form>
+									<div class="matter_right">
+										<span>在线留言</span>
+										<ul>
+											<p>尊敬的客户，如果您对我们的产品和服务有任何建议，请留下您的联系方式，我们会尽快为您处理。</p>
+											<li>姓名<span>（请填写您的姓名）</span></li>
+											<li><input type="text" name="uname"><span class="xing">*</span></li>
+											<li>公司<span>（请填写您的公司名称）</span></li>
+											<li><input type="text" name="firm_name"><span class="xing">*</span></li>
+											<li>邮箱<span>（请填写您的邮箱地址）</span></li>
+											<li><input type="text" name="email"><span class="xing">*</span></li>
+											<li>电话<span>（请填写您的电话）</li>
+											<li><input type="text" name="phone"><span class="xing">*</span></li>
+											<li>电话<span>（感谢您的留言）</li>
+											<li><textarea ></textarea><span class="xing">*</span></li>
+											<li><input type="submit"></li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--尾部-->
+				<div class="footer">
+					<div class="footer_nav">
+						<ul class="footer_nav1">
+							<li><a href="">法律声明</a></li>
+							<li><a href="">网站地图</a></li>
+							<li><a href="">联系我们</a></li>
+							<li style="border-right: none;"><a href="">友情链接</a></li>
+						</ul>
+						<ul class="footer_copy">
+							<li><a href="">版权所有&copy;</a></li>
+							<li><a href="">深圳市罗丹贝尔科技有限公司</a></li>
+							<li><a href="">粤ICP备10067287</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addPolyline();//向地图中添加线
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(114.029684,22.673823);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+//标注线数组
+    var plPoints = [{style:"solid",weight:4,color:"#f00",opacity:0.6,points:["114.02954|22.674199","114.029235|22.673331","114.030187|22.673548","114.029522|22.674182"]}
+		 ];
+    //向地图中添加线函数
+    function addPolyline(){
+		for(var i=0;i<plPoints.length;i++){
+			var json = plPoints[i];
+			var points = [];
+			for(var j=0;j<json.points.length;j++){
+				var p1 = json.points[j].split("|")[0];
+				var p2 = json.points[j].split("|")[1];
+				points.push(new BMap.Point(p1,p2));
+			}
+			var line = new BMap.Polyline(points,{strokeStyle:json.style,strokeWeight:json.weight,strokeColor:json.color,strokeOpacity:json.opacity});
+			map.addOverlay(line);
+		}
+	}
+    
+    initMap();//创建和初始化地图
+</script>
+</html>
+

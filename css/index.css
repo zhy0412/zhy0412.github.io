@@ -1,0 +1,142 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #454545;
+}
+.Container{
+	width:100%;
+	height:855px;
+}
+.wrap{
+	height:855px;
+	margin: 0 auto;
+	background-image: url(../img/bg.png);
+}
+.img{
+	width:100%;
+	height:384px;
+	background-color:#0A111A;
+}
+.img>a{
+	display: block;
+	width:1001px;
+	height:384px;
+	margin:0 auto;
+	margin-top:1px;
+}
+.news1{
+	width:1001px;
+	height:39px;
+	margin:0 auto;
+}
+.news{
+	width:100%;
+	height:39px;
+	
+	border-bottom: 1px solid #CAD0CA;
+}
+
+.news1>.new_affiche>li{
+	float:left;
+	margin-left:9px;
+	font-size:12px;
+	margin-top:13px;
+}
+.news1>.new_affiche>li>a{
+	color:#545554;
+}
+.news1>.new_affiche>li>img{
+	margin-top:4px;
+}
+#affiche{
+	font-size:14px;
+	font-weight: bold;
+	margin-left:6px;
+}
+.news1>.news_share>li{
+	float:left;
+	margin-left:6px;
+	margin-top:7px;
+}
+.news1>.news_share{
+	float:right;
+	width:154px;
+	height:30px;
+	/*border:1px solid red;*/
+	background-color:#ffffff;
+	border-radius: 19px;
+	margin-top:23px;
+}
+.imgs{
+	width:100%;
+	height:203px;
+	background-image:url(../img/2_7.png);
+	border:1px solid transparent;
+}
+.img1{
+	height:164px;
+	width:1001px;
+	margin:0 auto;
+	margin-top:36px;
+}
+.img1>ul>li{
+	float:left;
+	margin-left:19px;
+}
+.footer{
+	/*background-color:#F4F4F4;*/
+	width:100%;
+	height:90px;
+	background-image: url(../img/1_1.png);
+}
+.footer_nav{
+	width:1001px;
+	height:90px;
+	margin:0 auto;
+}
+.footer_nav>.footer_nav1{
+	width:100%;
+	height:44px;
+}
+.footer_nav>.footer_nav1>li{
+	width:71px;
+	height:16px;
+	height:12px;
+	text-align: center;
+	float:left;
+	font-size:12px;
+	margin-top:18px;
+	border-right: 1px solid #717171;
+}
+.footer_nav>.footer_copy>li{
+	float:left;
+	font-size:12px;
+	margin-left:12px;
+	
+}
+.footer_nav>.footer_copy>li>a{
+	color:#959595;
+}
+.slideBox{ overflow:hidden; position:relative; margin-top:1px;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ display:block;  margin:0 auto;}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../img/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
